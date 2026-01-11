@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toast Notification</title>
+  <link rel="stylesheet" href="./output.css">
+  <script src="script.js" defer></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body class="overflow-hidden">
+  <div class="m-12">
+    <button onclick="showToast(successMsg)" class="bg-[#333] text-white px-5 py-1.5 text-[16px] font-[500] mr-3 rounded cursor-pointer">Success</button>
+    <button onclick="showToast(errorMsg)" class="bg-[#333] text-white px-5 py-1.5 text-[16px] font-[500] mr-3 rounded cursor-pointer">Error</button>
+    <button onclick="showToast(invalidMsg)" class="bg-[#333] text-white px-5 py-1.5 text-[16px] font-[500] mr-3 rounded cursor-pointer">Invalid</button>
+  </div>
+  <div id="toast-box" class="absolute bottom-8 right-8 flex flex-col items-center justify-center p-5">
+
+  </div>
+</body>
+</html>
